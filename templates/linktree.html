@@ -19,25 +19,61 @@
         align-items: center;
       }
       li {
-        background-color: lightgray;
+        background-color: transparent;
         padding: 10px;
         border-radius: 5px;
         margin: 10px 0;
         width: 80%;
+        display: flex;
+        align-items: center;
       }
       a {
         text-decoration: none;
         color: black;
         display: block;
+        padding-left: 10px;
+      }
+      /* Add icons to the links */
+      .home-icon {
+        background-image: url('https://image.flaticon.com/icons/svg/61/61456.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+      }
+      .about-icon {
+        background-image: url('https://image.flaticon.com/icons/svg/565/565580.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+      }
+      .services-icon {
+        background-image: url('https://image.flaticon.com/icons/svg/565/565580.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+      }
+      .contact-icon {
+        background-image: url('https://image.flaticon.com/icons/svg/565/565519.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
       }
     </style>
   </head>
   <body>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
+        <li><a href="#home"><span class="home-icon"></span>Home</a></li>
+        <li><a href="#about"><span class="about-icon"></span>About</a></li>
+        <li><a href="#services"><span class="services-icon"></span>Services</a></li>
+        <li><a href="#contact"><span class="contact-icon"></span>Contact</a></li>
     </ul>
   </body>
 </html>
